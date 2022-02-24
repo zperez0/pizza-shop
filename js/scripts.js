@@ -1,8 +1,15 @@
 //business logic
-function Pizza(toppings, size, price) {
+function Pizza(toppings, size) {
   this.toppings = toppings;
   this.size = size;
-  this.price = price;
+  this.price = 0;
 }
 
-let myPizza = new Pizza(["veggies","cheese"], "large", 4.99);
+const myPizza = new Pizza("cheese");
+
+//pizza price method
+Pizza.prototype.pizzaPrice = function() {
+if (this.topping === "cheese"){
+}
+return this.price = 1;
+}

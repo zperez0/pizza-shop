@@ -5,31 +5,31 @@ Describe: Pizza()
 Test: "it should return a Pizza object with two properties for topping and size."
 
 Code: 
-const myPizza = new Pizza ('veggies', 'large');
+const myPizza = new Pizza ('Veggies', 'Large');
 
-Expected Output: Pizza { toppings: 'veggies', size: 'large' }
+Expected Output: Pizza { toppings: 'Veggies', size: 'Large' }
 
 <!-- test 2 -->
 Test: "it should return a Pizza object with two values for the property topping and a single value for the property size."
 
 Code: 
-const myPizza = new Pizza(['veggies','cheese'], 'large');
+const myPizza = new Pizza(['Veggies','Cheese'], 'Large');
 
-Expected Output: myPizza { toppings:['veggies', 'cheese'], size: 'large' }
+Expected Output: myPizza { toppings:['Veggies', 'Cheese'], size: 'Large' }
 
 <!-- test 3 -->
 Test: "it should return a Pizza object with three properties for topping, size, and price."
 
 Code: 
-const myPizza = new Pizza(['veggies','cheese'], size: 'large', 4.99);
+const myPizza = new Pizza(['Veggies','Cheese'], size: 'Large', 4.99);
 
-Expected Output: myPizza { toppings:['veggies', 'cheese'], size: 'large', price: 4.99 }
+Expected Output: myPizza { toppings:['Veggies', 'Cheese'], size: 'Large', price: 4.99 }
 
 <!-- test 4 -->
 Test: "It should return the cost of adding cheese to a pizza" 
 
 Code:
-const myPizza = new Pizza ('cheese');
+const myPizza = new Pizza ('Cheese');
 
 Expected Output: price: 1
 
@@ -37,6 +37,6 @@ Expected Output: price: 1
 Test: "It should return the cost of a small pizza"
 
 Code:
-const myPizza = new Pizza('cheese', 'small');
+const myPizza = new Pizza('Cheese', 'Small');
 
 Expected Output: price: 10

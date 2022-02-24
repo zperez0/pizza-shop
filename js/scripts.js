@@ -5,9 +5,9 @@ function Pizza(toppings, size) {
   this.price = 0;
 }
 
-const myPizza = new Pizza("cheese", "small");
+const myPizza = new Pizza("cheese", "large");
 
-//pizza price method
+//pizza topping price method
 Pizza.prototype.toppingPrice = function() {
   if (this.toppings === "cheese") {
     this.price = 1;
@@ -18,11 +18,13 @@ Pizza.prototype.toppingPrice = function() {
   }
 }
 
-
 //pizza size price method
-Pizza.prototype.sizePrice = function(){
-  if (this.size === "small"){
-    this.size = 10;
+Pizza.prototype.sizePrice = function() {
+  if (this.size === "small") {
+    this.price = 10;
+  } else if (this.size === "medium") {
+this.price = 12;
+  } else {
+this.price = 14;
   }
-  return this.size = 10;
 }

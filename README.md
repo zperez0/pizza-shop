@@ -26,7 +26,7 @@ const myPizza = new Pizza(['veggies','cheese'], size: 'large', 4.99);
 Expected Output: myPizza { toppings:['veggies', 'cheese'], size: 'large', price: 4.99 }
 
 <!-- test 4 -->
-Test: "It should return the cost of adding cheese to the pizza" 
+Test: "It should return the cost of adding cheese to a pizza" 
 
 Code:
 const myPizza = new Pizza ('cheese');

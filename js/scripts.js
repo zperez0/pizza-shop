@@ -8,16 +8,21 @@ function Pizza(toppings, size) {
 const myPizza = new Pizza("cheese", "small");
 
 //pizza price method
-Pizza.prototype.pizzaPrice = function() {
-if (this.topping === "cheese"){
-}
-return this.price = 1;
+Pizza.prototype.toppingPrice = function() {
+  if (this.toppings === "cheese") {
+    this.price = 1;
+  } else if (this.toppings === "veggie") {
+    this.price = 2;
+  } else {
+    this.price = 3;
+  }
 }
 
 
 //pizza size price method
 Pizza.prototype.sizePrice = function(){
   if (this.size === "small"){
+    this.size = 10;
   }
   return this.size = 10;
 }

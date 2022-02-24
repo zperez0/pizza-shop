@@ -42,4 +42,20 @@ this.price += 14;
 }
 
 //user logic
-
+$(document).ready(function(){
+  let pizzaArray = [];
+  
+  $("form#pizza").submit(function(event){
+    event.preventDefault();
+    let toppingOne = $("#toppingOne").val();
+    let toppingTwo = $("#toppingTwo").val();
+    let size = $("#size").val();
+    let pizza = new Pizza(toppingOne, toppingTwo, size);
+    pizza.toppingOnePrice();
+    pizza.toppingTwoPrice();
+    pizza.sizePrice();
+    pizzaArray.push(pizza);
+    console.log(pizzaArray);
+  });
+  
+})

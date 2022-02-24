@@ -33,8 +33,8 @@
         </select>
 
 
-<!-- pizza size -->
-<label for="sel3">Size:</label>
+        <!-- pizza size -->
+        <label for="sel3">Size:</label>
         <select class="form-control" id="size2">
           <option>Small</option>
           <option>Medium</option>
@@ -42,13 +42,16 @@
         </select>
       </div>
 
-<!-- submit button -->
-<button id="submit" type="button" class="btn btn-primary" >Checkout!</button>
+      <!-- submit button -->
+      <button id="submit" type="button" class="btn btn-primary" >Checkout!</button>
     </form>
   
 
 <!-- display order -->
-
+    <div id="checkout">
+      <p>You ordered a <span id="size"></span>, <span id="topping1"></span>, <span id ="topping2"></span> pizza!</p>
+      <p>Total: <span id="price"></span></p>
+    </div>  
 
 </body>
 </html>

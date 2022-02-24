@@ -1,7 +1,7 @@
 //business logic
 function Pizza(topping, size) {
-  this.topping = topping;
+  this.toppings = toppings;
   this.size = size;
 }
 
-let myPizza = new Pizza("veggies", "large");
+let myPizza = new Pizza(["veggies","cheese"], "large");

@@ -31,4 +31,12 @@ Test: "It should return the cost of adding cheese to the pizza"
 Code:
 const myPizza = new Pizza ('cheese');
 
-Expected Output: myPizza { toppings: 'cheese', size: undefined, price: 1 }
+Expected Output: price: 1
+
+<!-- test 5 -->
+Test: "It should return the cost of a small pizza"
+
+Code:
+const myPizza = new Pizza('cheese', 'small');
+
+Expected Output: price: 10

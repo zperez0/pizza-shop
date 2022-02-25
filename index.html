@@ -11,10 +11,11 @@
   <title>Pizza Shop</title>
 </head>
 <body>
-  <h2>Pizza Shop</h2>
-  <div class ="form-group">
+  <div class ="container">
 
     <form id ="pizza">
+
+  
 
       <!-- pizza toppings 1 -->
       <label for="sel1">Toppings:</label>
@@ -40,7 +41,7 @@
           <option>Medium</option>
           <option>Large</option>
         </select>
-      </div>
+      
 
       <!-- submit button -->
       <button type = "submit" class = "btn btn-secondary">Checkout!</button>
@@ -48,14 +49,17 @@
   
 
 <!-- display order -->
-    <div id="checkout">
-      <p>You ordered a <span id="size"></span>, <span id="toppings"></span>, <span class ="toppings2"></span> pizza!</p>
-      <p>Total: <span id="price"></span></p>
-    </div> 
+    <div class= "container">
+      <p><span id="checkout"></span></p>
+    
 
     <!-- reset -->
     <div id = "reset">
       <button type = "reset" class = "btn btn-secondary">Reset</button>
+      </div>
+    </div>
+  </div>
+</div> 
 
 </body>
 </html>

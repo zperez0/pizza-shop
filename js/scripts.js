@@ -50,12 +50,23 @@ $(document).ready(function(){
     let toppingOne = $("#toppingOne").val();
     let toppingTwo = $("#toppingTwo").val();
     let size = $("#size").val();
+    // let checkout = Pizza(toppingOne);
     let pizza = new Pizza(toppingOne, toppingTwo, size);
     pizza.toppingOnePrice();
     pizza.toppingTwoPrice();
     pizza.sizePrice();
     pizzaArray.push(pizza);
     console.log(pizzaArray);
+
+    
+    $("#checkout").html("You ordered a " + pizza.size + ", " + pizza.toppingOne + ", " + pizza.toppingTwo + ' pizza! ' + "Total: $" + pizza.price)
+    $("#checkout").show();
+    $("#reset").show();
+
+    $("#reset").click(function() {
+      $("#checkout").toggle().hide();
+      $("#reset").toggle().hide();
+      document.getElementById("pizza").reset();
+    });
   });
-  
-})
+});

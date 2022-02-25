@@ -2,6 +2,6 @@ body {
   margin: 50px;
 }
 
-#quote {
+#checkout, #reset {
   display: none;
 }

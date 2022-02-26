@@ -1,6 +1,5 @@
 .pizzaBody {
   margin: 80px;
-  padding-bottom: 40px;
 }
 body{
   background-color: #e9c46a;
@@ -30,4 +29,12 @@ body{
   margin-right: auto;
   width: 40%;
   padding: 10px;
+}
+
+#toppingOne, #toppingTwo, #size {
+  margin: 15px;
+}
+
+#title {
+  text-align:  center;
 }

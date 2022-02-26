@@ -6,8 +6,7 @@ function Pizza(toppingOne, toppingTwo, size) {
   this.price = 0;
 }
 
-//pizza topping price method
-Pizza.prototype.toppingOnePrice = function() {
+Pizza.prototype.toppingOnePrice = function () {
   if (this.toppingOne === "Cheese") {
     this.price += 1;
   } else if (this.toppingOne === "Veggies") {
@@ -15,40 +14,36 @@ Pizza.prototype.toppingOnePrice = function() {
   } else {
     this.price += 3;
   }
-}
+};
 
-//pizza topping2 price method
-Pizza.prototype.toppingTwoPrice = function() {
-  if(this.toppingTwo === "Cheese") {
+Pizza.prototype.toppingTwoPrice = function () {
+  if (this.toppingTwo === "Cheese") {
     this.price += 2;
   } else if (this.toppingTwo === "Veggies") {
     this.price += 3;
-  } else{
+  } else {
     this.price += 4;
   }
-}
+};
 
-//pizza size price method
-Pizza.prototype.sizePrice = function() {
+Pizza.prototype.sizePrice = function () {
   if (this.size === "Small") {
     this.price += 10;
   } else if (this.size === "Medium") {
-this.price += 12;
+    this.price += 12;
   } else {
-this.price += 14;
+    this.price += 14;
   }
-}
-
+};
 //user logic
-$(document).ready(function(){
+$(document).ready(function () {
   let pizzaArray = [];
-  
-  $("form#pizza").submit(function(event){
+
+  $("form#pizza").submit(function (event) {
     event.preventDefault();
     let toppingOne = $("#toppingOne").val();
     let toppingTwo = $("#toppingTwo").val();
     let size = $("#size").val();
-    // let checkout = Pizza(toppingOne);
     let pizza = new Pizza(toppingOne, toppingTwo, size);
     pizza.toppingOnePrice();
     pizza.toppingTwoPrice();
@@ -56,13 +51,23 @@ $(document).ready(function(){
     pizzaArray.push(pizza);
     console.log(pizzaArray);
 
-    
-    $("#checkout").html("🍕🍕🍕 You ordered a " + pizza.size + " " + pizza.toppingOne + ", " + pizza.toppingTwo + ' pizza! ' + " Total: $" + pizza.price + " 🍕🍕🍕")
+    $("#checkout").html(
+      "🍕🍕🍕 You ordered a " +
+        pizza.size +
+        " " +
+        pizza.toppingOne +
+        ", " +
+        pizza.toppingTwo +
+        " pizza! " +
+        " Total: $" +
+        pizza.price +
+        " 🍕🍕🍕"
+    );
     $("#checkout").show();
     $("#reset").show();
     $("#display").show();
 
-    $("#reset").click(function() {
+    $("#reset").click(function () {
       $("#checkout").toggle().hide();
       $("#reset").toggle().hide();
       $("#display").toggle().hide();

@@ -6,8 +6,6 @@ function Pizza(toppingOne, toppingTwo, size) {
   this.price = 0;
 }
 
-const myPizza = new Pizza("Cheese", "Veggies", "Large");
-
 //pizza topping price method
 Pizza.prototype.toppingOnePrice = function() {
   if (this.toppingOne === "Cheese") {

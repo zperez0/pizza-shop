@@ -18,7 +18,7 @@ body{
   padding: 20px;
   margin: 20px;
   width: 810px;
-  border: solid rgba(4, 120, 173, 0.747);
+  border: solid #ae2012;
   border-width: 2px;
   display: none;
 }
@@ -38,3 +38,5 @@ body{
 #title {
   text-align:  center;
 }
+
+/* ae2012 */

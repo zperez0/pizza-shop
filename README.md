@@ -6,7 +6,7 @@
 
 ## Links
 
-_ _
+_https://zperez0.github.io/pizza-shop/_
 
 ## Technologies Used
 
@@ -46,7 +46,7 @@ Test: "it should return a Pizza object with two values for the property topping 
 Code: 
 const myPizza = new Pizza(['Veggies','Cheese'], 'Large');
 
-Expected Output: myPizza { toppings:['Veggies', 'Cheese'], size: 'Large' }
+Expected Output: myPizza { toppings: ['Veggies', 'Cheese'], size: 'Large' }
 
 
 Describe: toppingOnePrice()
@@ -56,7 +56,7 @@ Test: "it should return a Pizza object with three properties for topping, size, 
 Code: 
 const myPizza = new Pizza(['Veggies','Cheese'], size: 'Large', 4.99);
 
-Expected Output: myPizza { toppings:['Veggies', 'Cheese'], size: 'Large', price: 4.99 }
+Expected Output: myPizza { toppings: ['Veggies', 'Cheese'], size: 'Large', price: 4.99 }
 
 
 Describe: toppingTwoPrice()

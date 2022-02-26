@@ -14,12 +14,12 @@
   <div class ="container">
 
     <form id ="pizza">
-
-      <div class="jumbotron">
-        <h2 class="display-4">Pizza Shop</h2>
-        <p class="lead">Slice of life!</p>
+        <p class="img"><img src="img/logo.png" class="center"></p>
     </div>
+  </div>
+</div>
 
+<div class = "pizzaBody">
       <!-- pizza toppings 1 -->
       <label for="sel1">Toppings:</label>
       <select class="form-control" id="toppingOne">
@@ -47,12 +47,14 @@
       
 
       <!-- submit button -->
+      <div id ="checkout-btn">
       <button type = "submit" class = "btn btn-secondary">Checkout!</button>
+      </div>
     </form>
   
 
 <!-- display order -->
-    <div class= "container">
+    <div id= "display">
       <p><span id="checkout"></span></p>
     
 
@@ -62,7 +64,7 @@
       </div>
     </div>
   </div>
-</div> 
+</div>
 
 </body>
 </html>

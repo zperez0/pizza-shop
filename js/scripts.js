@@ -59,13 +59,15 @@ $(document).ready(function(){
     console.log(pizzaArray);
 
     
-    $("#checkout").html("You ordered a " + pizza.size + " " + pizza.toppingOne + ", " + pizza.toppingTwo + ' pizza! ' + "Total: $" + pizza.price)
+    $("#checkout").html("🍕🍕🍕 You ordered a " + pizza.size + " " + pizza.toppingOne + ", " + pizza.toppingTwo + ' pizza! ' + "Total: $" + pizza.price + " 🍕🍕🍕")
     $("#checkout").show();
     $("#reset").show();
+    $("#display").show();
 
     $("#reset").click(function() {
       $("#checkout").toggle().hide();
       $("#reset").toggle().hide();
+      $("#display").toggle().hide();
       document.getElementById("pizza").reset();
     });
   });

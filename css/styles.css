@@ -1,7 +1,13 @@
-body {
-  margin: 50px;
+.pizzaBody {
+  margin: 80px;
+  padding-bottom: 40px;
+}
+body{
+  background-color: #e9c46a;
+  margin: 70px;
 }
 
 #checkout, #reset {
   display: none;
 }
+

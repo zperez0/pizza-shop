@@ -11,3 +11,23 @@ body{
   display: none;
 }
 
+#display , #checkout-btn, #reset {
+  padding: 20px;
+}
+
+#display {
+  padding: 20px;
+  margin: 20px;
+  width: 810px;
+  border: solid rgba(4, 120, 173, 0.747);
+  border-width: 2px;
+  display: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 10px;
+}
